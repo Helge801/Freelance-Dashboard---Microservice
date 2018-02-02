@@ -10,3 +10,5 @@ export class Proposal {
     public client_email?: string,  
    ) {}
 }
+
+// 15, 'Abc Company', 'http://portfolio.jordanhudgens.com', 'Ruby on Rails', 150, 120, 15, 'jordan@devcamp.com'
