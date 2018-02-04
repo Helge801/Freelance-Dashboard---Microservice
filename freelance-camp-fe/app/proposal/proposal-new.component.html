@@ -10,6 +10,7 @@
               <div class="form-group">
                 <label for="customer">Customer Name</label>
                 <input type="text"
+                       class="form-control" 
                        id="customer"
                        placeholder="ABC Company"
                        required
@@ -27,6 +28,7 @@
               <div class="form-group">
                 <label for="portfolio_url">Portfolio URL</label>
                 <input type="text"
+                       class="form-control"
                        id="portfolio_url"
                        placeholder="ABC Company"
                        required
@@ -44,6 +46,7 @@
               <div class="form-group">
                 <label for="tools">Tools</label>
                 <input type="text"
+                       class="form-control"
                        id="tools"
                        placeholder="Ruby on rails, Angular"
                        required
@@ -61,8 +64,8 @@
               <div class="form-group">
                 <label for="estimated_hours">Estimated Hours</label>
                 <input type="number"
+                       class="form-control"
                        id="estimated_hours"
-                       placeholder="0.0"
                        required
                        name="estimated_hours"
                        #estimated_hours='ngModel'
@@ -77,14 +80,17 @@
 
               <div class="form-group">
                 <label for="hourly_rate">Hourly Rate</label>
-                <input type="number"
-                       id="hourly_rate"
-                       placeholder="0.0"
-                       required
-                       name="hourly_rate"
-                       #hourly_rate='ngModel'
-                       [(ngModel)]="proposal.hourly_rate"
-                >
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input type="number"
+                         class="form-control"
+                         id="hourly_rate"
+                         required
+                         name="hourly_rate"
+                         #hourly_rate='ngModel'
+                         [(ngModel)]="proposal.hourly_rate"
+                  > 
+                </div>
                 <div [hidden]="hourly_rate.valid || hourly_rate.pristine"
                     class="alert alert-danger" 
                 >
@@ -95,8 +101,8 @@
               <div class="form-group">
                 <label for="weeks_to_complete">Weeks To Complete</label>
                 <input type="number"
+                       class="form-control"
                        id="weeks_to_complete"
-                       placeholder="0"
                        required
                        name="weeks_to_complete"
                        #weeks_to_complete='ngModel'
@@ -112,6 +118,7 @@
               <div class="form-group">
                 <label for="client_email">Client Email</label>
                 <input type="text"
+                       class="form-control"
                        id="client_email"
                        placeholder="sample@mail.com"
                        required
