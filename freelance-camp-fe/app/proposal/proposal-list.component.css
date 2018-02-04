@@ -1,4 +1,8 @@
-.list-group-item-proposal:hover {
+.proposal-link:hover {
+  text-decoration: none;
+}
+
+list-group-item-proposal:hover {
   cursor: pointer;
 }
 
