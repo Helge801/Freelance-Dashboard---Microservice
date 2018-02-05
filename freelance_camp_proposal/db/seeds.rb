@@ -1,5 +1,5 @@
 10.times do |prop|
-  Proposal.create!( customer: "customer 1",
+  Proposal.create!( customer: "customer #{prop}",
                     portfolio_url: "http://bryan-lund.com",
                     tools: "Ruby on rails, Angular 2, PostgreSQL",
                     estimated_hours: (80 + prop),
