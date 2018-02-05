@@ -2,7 +2,7 @@ class FreelanceDocumentsController < ApplicationController
   before_action :set_freelance_document, only: [:show, :update, :destroy]
 
   def index
-    @freelance_documents = FreelanceDocument.all
+    @freelance_documents = FreelanceDocument.order('created_at DESC')
 
     render json: @freelance_documents
   end
