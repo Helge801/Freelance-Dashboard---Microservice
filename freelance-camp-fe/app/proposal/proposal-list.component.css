@@ -2,7 +2,7 @@
   text-decoration: none;
 }
 
-list-group-item-proposal:hover {
+.list-group-item-proposal:hover {
   cursor: pointer;
 }
 
